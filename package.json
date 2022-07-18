@@ -38,7 +38,7 @@
     "envinfo": "~7.8.1",
     "mustache": "~4.2.0",
     "html_codesniffer": "~2.5.1",
-    "kleur": "~4.1.4",
+    "kleur": "~4.1.5",
     "node.extend": "~2.0.2",
     "p-timeout": "~4.1.0",
     "puppeteer": "~9.1.1",
