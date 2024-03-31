@@ -3,11 +3,11 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
-      "packagePatterns": ["*"],
+      "matchPackagePatterns": ["*"],
       "enabled": false
     },
     {
-      "packageNames": ["axe-core", "html_codesniffer", "puppeteer"],
+      "matchPackageNames": ["axe-core", "html_codesniffer", "puppeteer"],
       "enabled": true
     }
   ]
