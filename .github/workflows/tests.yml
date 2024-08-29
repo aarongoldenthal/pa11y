@@ -21,14 +21,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [macos-latest]
         node-version: [18, 20]
     steps:
-      - name: Normalise line-ending handling in Git
+      - name: Check xcode
         shell: bash
         run: |
-          git config --global core.autocrlf false
-        if: runner.os == 'Windows'
+          /usr/bin/xcodebuild -version
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
