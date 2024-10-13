@@ -24,6 +24,8 @@ describe('CLI action "clear-field-value"', function() {
 		// error in the markup. When this action is performed the DOM is manupulated by JavaScript
 		// to remove the offending element, hence no a11y errors is proof of this successful action
 		it('clears the field value before running tests', function() {
+			console.log('pa11yResponse');
+			console.log(pa11yResponse);
 			assert.isArray(pa11yResponse.json);
 			assert.lengthEquals(pa11yResponse.json, 0);
 		});
